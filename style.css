@@ -1,0 +1,109 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,500;1,600&display=swap');
+
+  body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230,230,230);
+    font-family: 'Open Sans', sans-serif;
+  }
+  h1{
+    position: absolute;
+    top:22%;
+    font-size:35px;
+  }
+.container{
+    display: flex;
+    gap:25px;
+}
+.icon{
+    list-style-type: none;
+    position:relative;
+    padding:15px;
+    margin:10px;
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0px 0px 37px rgb(0,0,0,.4);
+    transition:.3s;
+}
+.icon i{
+    font-size:30px;
+}
+.icon .infotip{
+    position: absolute;
+    top:0px;
+    background-color: #fff;
+    padding:8px 12px;
+    border-radius: 10px;
+    font-size:22px;
+     opacity:0; 
+    transition: all .3s cubic-bezier(0.68,-.55,0.295,1.55);
+}
+.container .icon .infotip::before{
+    position:absolute;
+    content:"";
+    height:9px;width:9px;
+    background-color: red;
+    bottom:-3px;
+    left:50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all .3s cubic-bezier(0.68,-.55,0.295,1.55);
+}
+.container .icon:hover .infotip{
+    top:-68px;
+    opacity: 1;
+    visibility: visible;
+}
+.container .icon:hover .infotip{
+    text-shadow: 0px -1px 0px rgb(0,0,0,.4);
+}
+
+.container .youtube:hover,
+.container .youtube:hover .infotip,
+.container .youtube:hover .infotip::before{
+color:#fff;
+background:#cd201d;
+}
+.container .github:hover,
+.container .github:hover .infotip,
+.container .github:hover .infotip::before{
+color:#fff;
+background:#60078d;
+}
+.container .instagram:hover,
+.container .instagram:hover .infotip,
+.container .instagram:hover .infotip::before{
+color:#fff;
+background:#e44c6d;
+}
+.container .twitter:hover,
+.container .twitter:hover .infotip,
+.container .twitter:hover .infotip::before{
+color:#fff;
+background:#333333;
+}
+.container .facebook:hover,
+.container .facebook:hover .infotip,
+.container .facebook:hover .infotip::before{
+color:#fff;
+background:#1877fd;
+}
+.container .whatsapp:hover,
+.container .whatsapp:hover .infotip,
+.container .whatsapp:hover .infotip::before{
+color:#fff;
+background:#15bd48;
+}
